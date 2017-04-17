@@ -1,1 +1,40 @@
-{     "devDependencies": {         "markdown-to-html": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-markdown-to-html",     "homepage": "https://github.com/npmtest/node-npmtest-markdown-to-html",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-markdown-to-html.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [markdown-to-html (v0.0.13)](https://github.com/cwjohan/markdown-to-html) [![npm package](https://img.shields.io/npm/v/npmtest-markdown-to-html.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-markdown-to-html) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-markdown-to-html.svg)](https://travis-ci.org/npmtest/node-npmtest-markdown-to-html)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "markdown-to-html": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-markdown-to-html",
+    "keywords": [
+        "coverage",
+        "test",
+        "markdown-to-html"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_markdown_to_html.js",
+    "name": "npmtest-markdown-to-html",
+    "nameAlias": "npmtest_markdown_to_html",
+    "nameOriginal": "npmtest-markdown-to-html",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-markdown-to-html.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
