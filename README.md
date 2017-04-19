@@ -1,4 +1,7 @@
-# test coverage for  [markdown-to-html (v0.0.13)](https://github.com/cwjohan/markdown-to-html)  [![npm package](https://img.shields.io/npm/v/npmtest-markdown-to-html.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-markdown-to-html) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-markdown-to-html.svg)](https://travis-ci.org/npmtest/node-npmtest-markdown-to-html)
+# npmtest-markdown-to-html
+
+#### test coverage for  [markdown-to-html (v0.0.13)](https://github.com/cwjohan/markdown-to-html)  [![npm package](https://img.shields.io/npm/v/npmtest-markdown-to-html.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-markdown-to-html) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-markdown-to-html.svg)](https://travis-ci.org/npmtest/node-npmtest-markdown-to-html)
+
 #### Converts markdown text to HTML. A readable stream plus utilities and web demo.
 
 [![NPM](https://nodei.co/npm/markdown-to-html.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/markdown-to-html)
